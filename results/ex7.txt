@@ -1,0 +1,40 @@
+{Maker=Acura; Cars={[{Model=Integra; Maker=Acura; Year= 2010; Color=Purple}]}}
+{Maker=Audi; Cars={[{Model=A5; Maker=Audi; Year= 1998; Color=Maroon}, {Model=A8; Maker=Audi; Year= 2008; Color=Red}, {Model=TT; Maker=Audi; Year= 2005; Color=Red}]}}
+{Maker=BMW; Cars={[{Model=3 Series; Maker=BMW; Year= 1998; Color=Crimson}]}}
+{Maker=Buick; Cars={[{Model=Century; Maker=Buick; Year= 2009; Color=Goldenrod}, {Model=Roadmaster; Maker=Buick; Year= 2006; Color=Aquamarine}, {Model=Skylark; Maker=Buick; Year= 2008; Color=Blue}]}}
+{Maker=Cadillac; Cars={[{Model=SRX; Maker=Cadillac; Year= 1998; Color=Aquamarine}, {Model=Escalade EXT; Maker=Cadillac; Year= 2003; Color=Red}, {Model=Escalade ESV; Maker=Cadillac; Year= 2010; Color=Goldenrod}, {Model=SRX; Maker=Cadillac; Year= 2007; Color=Blue}]}}
+{Maker=Chevrolet; Cars={[{Model=Camaro; Maker=Chevrolet; Year= 2008; Color=Red}, {Model=Prizm; Maker=Chevrolet; Year= 2005; Color=Mauv}, {Model=Vega; Maker=Chevrolet; Year= 2010; Color=Green}, {Model=Camaro; Maker=Chevrolet; Year= 2010; Color=Mauv}, {Model=G-Series G20; Maker=Chevrolet; Year= 2007; Color=Maroon}, {Model=Silverado 1500; Maker=Chevrolet; Year= 2009; Color=Teal}, {Model=Cobalt; Maker=Chevrolet; Year= 2004; Color=Fuscia}, {Model=Express 1500; Maker=Chevrolet; Year= 2000; Color=Indigo}]}}
+{Maker=Chrysler; Cars={[{Model=LHS; Maker=Chrysler; Year= 2003; Color=Yellow}]}}
+{Maker=Corbin; Cars={[{Model=Sparrow; Maker=Corbin; Year= 2001; Color=Yellow}]}}
+{Maker=Dodge; Cars={[{Model=Avenger; Maker=Dodge; Year= 1999; Color=Yellow}, {Model=Ram 50; Maker=Dodge; Year= 2007; Color=Maroon}, {Model=Ram 1500; Maker=Dodge; Year= 2008; Color=Mauv}, {Model=Neon; Maker=Dodge; Year= 2009; Color=Yellow}, {Model=Viper; Maker=Dodge; Year= 2009; Color=Pink}, {Model=D250; Maker=Dodge; Year= 2005; Color=Red}, {Model=Grand Caravan; Maker=Dodge; Year= 2010; Color=Purple}, {Model=Journey; Maker=Dodge; Year= 2004; Color=Teal}, {Model=Ram 3500; Maker=Dodge; Year= 2007; Color=Orange}]}}
+{Maker=Eagle; Cars={[{Model=Talon; Maker=Eagle; Year= 2009; Color=Turquoise}]}}
+{Maker=Ford; Cars={[{Model=C-MAX Hybrid; Maker=Ford; Year= 2009; Color=Red}, {Model=Explorer; Maker=Ford; Year= 2006; Color=Green}, {Model=Mustang; Maker=Ford; Year= 2003; Color=Mauv}, {Model=Escape; Maker=Ford; Year= 1998; Color=Red}, {Model=Aerostar; Maker=Ford; Year= 2003; Color=Teal}, {Model=Escape; Maker=Ford; Year= 1999; Color=Maroon}]}}
+{Maker=GMC; Cars={[{Model=Sierra 1500; Maker=GMC; Year= 2001; Color=Maroon}, {Model=Envoy; Maker=GMC; Year= 2004; Color=Orange}, {Model=3500 Club Coupe; Maker=GMC; Year= 2006; Color=Green}]}}
+{Maker=Geo; Cars={[{Model=Storm; Maker=Geo; Year= 2000; Color=Purple}, {Model=Tracker; Maker=Geo; Year= 2004; Color=Aquamarine}]}}
+{Maker=Honda; Cars={[{Model=del Sol; Maker=Honda; Year= 2009; Color=Turquoise}]}}
+{Maker=Hyundai; Cars={[{Model=Accent; Maker=Hyundai; Year= 2006; Color=Crimson}]}}
+{Maker=Infiniti; Cars={[{Model=QX56; Maker=Infiniti; Year= 2004; Color=Puce}]}}
+{Maker=Isuzu; Cars={[{Model=i-370; Maker=Isuzu; Year= 2009; Color=Goldenrod}]}}
+{Maker=Jaguar; Cars={[{Model=XF; Maker=Jaguar; Year= 2007; Color=Crimson}]}}
+{Maker=Jeep; Cars={[{Model=Wrangler; Maker=Jeep; Year= 2007; Color=Puce}]}}
+{Maker=Kia; Cars={[{Model=Optima; Maker=Kia; Year= 2004; Color=Green}, {Model=Optima; Maker=Kia; Year= 2003; Color=Mauv}, {Model=Spectra; Maker=Kia; Year= 2006; Color=Red}]}}
+{Maker=Lamborghini; Cars={[{Model=Diablo; Maker=Lamborghini; Year= 2006; Color=Pink}]}}
+{Maker=Lexus; Cars={[{Model=RX Hybrid; Maker=Lexus; Year= 2008; Color=Goldenrod}, {Model=ES; Maker=Lexus; Year= 1999; Color=Orange}, {Model=GX; Maker=Lexus; Year= 2004; Color=Yellow}]}}
+{Maker=Lincoln; Cars={[{Model=Town Car; Maker=Lincoln; Year= 2007; Color=Orange}, {Model=Continental; Maker=Lincoln; Year= 2004; Color=Mauv}, {Model=MKX; Maker=Lincoln; Year= 2010; Color=Violet}]}}
+{Maker=Lotus; Cars={[{Model=Elan; Maker=Lotus; Year= 2005; Color=Indigo}]}}
+{Maker=Maybach; Cars={[{Model=57; Maker=Maybach; Year= 2000; Color=Crimson}]}}
+{Maker=Mazda; Cars={[{Model=MPV; Maker=Mazda; Year= 2007; Color=Goldenrod}, {Model=MPV; Maker=Mazda; Year= 2007; Color=Crimson}]}}
+{Maker=Mercedes-Benz; Cars={[{Model=R-Class; Maker=Mercedes-Benz; Year= 2008; Color=Crimson}, {Model=S-Class; Maker=Mercedes-Benz; Year= 2003; Color=Crimson}, {Model=SLR McLaren; Maker=Mercedes-Benz; Year= 1999; Color=Maroon}, {Model=E-Class; Maker=Mercedes-Benz; Year= 1999; Color=Blue}, {Model=CL-Class; Maker=Mercedes-Benz; Year= 2000; Color=Fuscia}]}}
+{Maker=Mercury; Cars={[{Model=Grand Marquis; Maker=Mercury; Year= 2005; Color=Orange}, {Model=Sable; Maker=Mercury; Year= 1998; Color=Fuscia}, {Model=Cougar; Maker=Mercury; Year= 2009; Color=Puce}, {Model=Cougar; Maker=Mercury; Year= 2004; Color=Blue}, {Model=Cougar; Maker=Mercury; Year= 2006; Color=Teal}]}}
+{Maker=Mitsubishi; Cars={[{Model=Chariot; Maker=Mitsubishi; Year= 2010; Color=Orange}, {Model=Lancer; Maker=Mitsubishi; Year= 2010; Color=Turquoise}]}}
+{Maker=Nissan; Cars={[{Model=Titan; Maker=Nissan; Year= 1999; Color=Violet}]}}
+{Maker=Oldsmobile; Cars={[{Model=88; Maker=Oldsmobile; Year= 2008; Color=Orange}]}}
+{Maker=Plymouth; Cars={[{Model=Prowler; Maker=Plymouth; Year= 1999; Color=Fuscia}]}}
+{Maker=Pontiac; Cars={[{Model=Grand Prix; Maker=Pontiac; Year= 1999; Color=Crimson}, {Model=6000; Maker=Pontiac; Year= 1999; Color=Khaki}, {Model=Grand Prix; Maker=Pontiac; Year= 2001; Color=Aquamarine}, {Model=Firebird; Maker=Pontiac; Year= 1998; Color=Green}]}}
+{Maker=Ram; Cars={[{Model=2500; Maker=Ram; Year= 2002; Color=Blue}, {Model=3500; Maker=Ram; Year= 2010; Color=Goldenrod}]}}
+{Maker=Saab; Cars={[{Model=9-3; Maker=Saab; Year= 2001; Color=Blue}, {Model=9-7X; Maker=Saab; Year= 2008; Color=Maroon}, {Model=900; Maker=Saab; Year= 2008; Color=Orange}]}}
+{Maker=Saturn; Cars={[{Model=Outlook; Maker=Saturn; Year= 2007; Color=Green}]}}
+{Maker=Subaru; Cars={[{Model=XT; Maker=Subaru; Year= 2007; Color=Orange}]}}
+{Maker=Suzuki; Cars={[{Model=Daewoo Magnus; Maker=Suzuki; Year= 1998; Color=Pink}, {Model=Swift; Maker=Suzuki; Year= 2007; Color=Indigo}, {Model=Equator; Maker=Suzuki; Year= 2001; Color=Turquoise}, {Model=Forenza; Maker=Suzuki; Year= 2009; Color=Turquoise}]}}
+{Maker=Toyota; Cars={[{Model=Avalon; Maker=Toyota; Year= 2010; Color=Aquamarine}, {Model=Matrix; Maker=Toyota; Year= 1998; Color=Khaki}]}}
+{Maker=Не определено; Cars={[{Model=TrailBlazer; Maker=Не определено; Year= 2003; Color=Puce}, {Model=Sonata; Maker=Не определено; Year= 2001; Color=Yellow}, {Model=Quest; Maker=Не определено; Year= 2001; Color=Aquamarine}, {Model=626; Maker=Не определено; Year= 2009; Color=Mauv}, {Model=X3; Maker=Не определено; Year= 2005; Color=Turquoise}]}}
