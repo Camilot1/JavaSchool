@@ -25,7 +25,7 @@ public class IOManager {
 
         return Files.lines(path, StandardCharsets.UTF_8)
                 .filter(str -> !str.equals("car model,car make,car model year,color"))
-                .map(str -> str.replace(",,", ",Не определено,"))
+                .map(str -> str.replace(",,", ",Undefined,"))
                 .map(str -> str.split(","))
                 .collect(Collectors.toList());
     }
