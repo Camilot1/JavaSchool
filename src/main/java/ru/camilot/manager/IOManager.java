@@ -1,4 +1,4 @@
-package ru.camilot;
+package ru.camilot.manager;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

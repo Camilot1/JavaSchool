@@ -1,5 +1,6 @@
 package ru.camilot;
 
+import ru.camilot.manager.IOManager;
 import ru.camilot.manager.ParseIndexManager;
 import ru.camilot.object.Car;
 import ru.camilot.object.CarMaker;
