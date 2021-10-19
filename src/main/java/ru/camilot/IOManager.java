@@ -19,14 +19,12 @@ public class IOManager {
      * @throws URISyntaxException .
      * @throws IOException .
      */
-    public static List<String[]> readFile(String filePath) throws URISyntaxException, IOException {
+    public static List<String> readFile(String filePath) throws URISyntaxException, IOException {
         URL resource = IOManager.class.getClassLoader().getResource(filePath);
         Path path = Paths.get(resource.toURI());
 
         return Files.lines(path, StandardCharsets.UTF_8)
-                .filter(str -> !str.equals("car model,car make,car model year,color"))
-                .map(str -> str.replace(",,", ",Не определено,"))
-                .map(str -> str.split(","))
+                .map(str -> str.replace(",,", ",Undefined,"))
                 .collect(Collectors.toList());
     }
 

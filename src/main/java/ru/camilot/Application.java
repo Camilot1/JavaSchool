@@ -1,5 +1,6 @@
 package ru.camilot;
 
+import ru.camilot.manager.ParseIndexManager;
 import ru.camilot.object.Car;
 import ru.camilot.object.CarMaker;
 
@@ -13,50 +14,61 @@ import java.util.stream.Collectors;
 
 public class Application {
 
+    private static final ParseIndexManager pim = new ParseIndexManager();
+
+
     public static void main(String[] args) throws IOException, URISyntaxException {
 
-        List<String[]> dataList = IOManager.readFile("CAR_DATA.csv");
+        List<String> dataList = IOManager.readFile("CAR_DATA.csv");
+
+        String header = dataList.get(0);
+        dataList.remove(0);
+
+        pim.registerClass(header, Car.class);
+
+        List<Car> carList = new ArrayList<>();
+        for(String line: dataList) carList.add(pim.parseObject(line, Car.class));
 
         System.out.println("Задание №5:");
-        ex5(dataList);
+        ex5(carList);
         System.out.println("Записан файл: ex5.txt.\n");
         System.out.println("Задание №6:");
-        ex6(dataList);
+        ex6(carList);
         System.out.println("Записан файл: ex6.txt.\n");
         System.out.println("Задание №7:");
-        ex7(dataList);
+        ex7(carList);
         System.out.println("Записан файл: ex7.txt.\n");
         System.out.println("Задание №8:");
-        ex8(dataList);
+        ex8(carList);
         System.out.println("Записан файл: ex8.txt.\n");
 
     }
 
     /**
      * Реализация 5 пункта задания.
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car.
      * @throws IOException .
      */
-    private static void ex5(List<String[]> dataList) throws IOException {
-        IOManager.writeFile(createCarList(dataList), "ex5.txt");
+    private static void ex5(List<Car> carList) throws IOException {
+        IOManager.writeFile(carList, "ex5.txt");
     }
 
     /**
      * Реализация 6 пункта задания.
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car
      * @throws IOException .
      */
-    private static void ex6(List<String[]> dataList) throws IOException {
-        IOManager.writeFile(createCarColorMap(dataList).entrySet(), "ex6.txt");
+    private static void ex6(List<Car> carList) throws IOException {
+        IOManager.writeFile(createCarColorMap(carList).entrySet(), "ex6.txt");
     }
 
     /**
      * Реализация 7 пункта задания.
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car.
      * @throws IOException .
      */
-    private static void ex7(List<String[]> dataList) throws IOException {
-        Map<String, CarMaker> carMakerMap = createCarMakerMap(dataList);
+    private static void ex7(List<Car> carList) throws IOException {
+        Map<String, CarMaker> carMakerMap = createCarMakerMap(carList);
 
         List<CarMaker> carMakerList = convertToSortedCarMakerList(carMakerMap);
 
@@ -66,11 +78,11 @@ public class Application {
 
     /**
      * Реализация 8 пункта задания.
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car.
      * @throws IOException .
      */
-    private static void ex8(List<String[]> dataList) throws IOException {
-        Map<String, CarMaker> carMakerMap = createCarMakerMap(dataList);
+    private static void ex8(List<Car> carList) throws IOException {
+        Map<String, CarMaker> carMakerMap = createCarMakerMap(carList);
 
         carMakerMap = carMakerMap.entrySet()
                 .stream()
@@ -83,32 +95,19 @@ public class Application {
     }
 
     /**
-     * Метод создаёт список объектов Car из списка с данными полей.
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
-     * @return список объектов Car.
-     */
-    private static List<Car> createCarList(List<String[]> dataList) {
-        List<Car> carList = new ArrayList<>();
-        for(String[] data: dataList) carList.add(new Car(data));
-        return carList;
-    }
-
-    /**
      * Метод создаёт HashMap (ключ - цвет, значение: список объектов Car).
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car.
      * @return HashMap (ключ - цвет, значение: список объектов Car).
      */
-    private static Map<String, List<Car>> createCarColorMap(List<String[]> dataList) {
+    private static Map<String, List<Car>> createCarColorMap(List<Car> carList) {
         Map<String, List<Car>> carColorMap = new HashMap<>();
+        List<Car> carColorList;
 
-        Car car;
-        List<Car> carList;
-        for(String[] data: dataList) {
-            car = new Car(data);
+        for(Car car: carList) {
             if (carColorMap.get(car.getColor()) == null) {
-                carList = new ArrayList<>();
-                carList.add(car);
-                carColorMap.put(car.getColor(), carList);
+                carColorList = new ArrayList<>();
+                carColorList.add(car);
+                carColorMap.put(car.getColor(), carColorList);
             } else {
                 carColorMap.get(car.getColor()).add(car);
             }
@@ -118,15 +117,13 @@ public class Application {
 
     /**
      * Метод создаёт HashMap (ключ - производитель, значение: список объектов Car).
-     * @param dataList - список строчных массивов из входного файла со значениями полей Car.
+     * @param carList - список объектов Car.
      * @return HashMap (ключ - производитель, значение: список объектов Car).
      */
-    private static Map<String, CarMaker> createCarMakerMap(List<String[]> dataList) {
+    private static Map<String, CarMaker> createCarMakerMap(List<Car> carList) {
         Map<String, CarMaker> carMakerMap = new HashMap<>();
-        Car car;
         CarMaker carMaker;
-        for(String[] data: dataList) {
-            car = new Car(data);
+        for(Car car: carList) {
             if (carMakerMap.get(car.getMaker()) == null) {
                 carMaker = new CarMaker(car.getMaker(), car);
                 carMakerMap.put(carMaker.getMaker(), carMaker);

@@ -28,7 +28,8 @@ public class CarMaker {
     }
 
     public void setMaker(String maker) {
-        if (maker.length() > 0) this.maker = maker;
+        if (maker == null) this.maker = "Undefined";
+        else if (maker.length() > 0) this.maker = maker;
         else this.maker = "Undefined";
     }
 

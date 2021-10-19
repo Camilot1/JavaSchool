@@ -29,7 +29,7 @@
 {Model=Escalade EXT; Maker=Cadillac; Year= 2003; Color=Red}
 {Model=Prizm; Maker=Chevrolet; Year= 2005; Color=Mauv}
 {Model=Escalade ESV; Maker=Cadillac; Year= 2010; Color=Goldenrod}
-{Model=TrailBlazer; Maker=Не определено; Year= 2003; Color=Puce}
+{Model=TrailBlazer; Maker=Undefined; Year= 2003; Color=Puce}
 {Model=Viper; Maker=Dodge; Year= 2009; Color=Pink}
 {Model=Vega; Maker=Chevrolet; Year= 2010; Color=Green}
 {Model=9-3; Maker=Saab; Year= 2001; Color=Blue}
@@ -46,7 +46,7 @@
 {Model=G-Series G20; Maker=Chevrolet; Year= 2007; Color=Maroon}
 {Model=Escape; Maker=Ford; Year= 1998; Color=Red}
 {Model=MKX; Maker=Lincoln; Year= 2010; Color=Violet}
-{Model=Sonata; Maker=Не определено; Year= 2001; Color=Yellow}
+{Model=Sonata; Maker=Undefined; Year= 2001; Color=Yellow}
 {Model=Cougar; Maker=Mercury; Year= 2009; Color=Puce}
 {Model=Wrangler; Maker=Jeep; Year= 2007; Color=Puce}
 {Model=Silverado 1500; Maker=Chevrolet; Year= 2009; Color=Teal}
@@ -82,7 +82,7 @@
 {Model=Matrix; Maker=Toyota; Year= 1998; Color=Khaki}
 {Model=Cougar; Maker=Mercury; Year= 2006; Color=Teal}
 {Model=Cobalt; Maker=Chevrolet; Year= 2004; Color=Fuscia}
-{Model=Quest; Maker=Не определено; Year= 2001; Color=Aquamarine}
+{Model=Quest; Maker=Undefined; Year= 2001; Color=Aquamarine}
 {Model=Tracker; Maker=Geo; Year= 2004; Color=Aquamarine}
 {Model=Sparrow; Maker=Corbin; Year= 2001; Color=Yellow}
 {Model=3500 Club Coupe; Maker=GMC; Year= 2006; Color=Green}
@@ -90,11 +90,11 @@
 {Model=LHS; Maker=Chrysler; Year= 2003; Color=Yellow}
 {Model=Express 1500; Maker=Chevrolet; Year= 2000; Color=Indigo}
 {Model=Spectra; Maker=Kia; Year= 2006; Color=Red}
-{Model=626; Maker=Не определено; Year= 2009; Color=Mauv}
+{Model=626; Maker=Undefined; Year= 2009; Color=Mauv}
 {Model=MPV; Maker=Mazda; Year= 2007; Color=Crimson}
 {Model=E-Class; Maker=Mercedes-Benz; Year= 1999; Color=Blue}
 {Model=Prowler; Maker=Plymouth; Year= 1999; Color=Fuscia}
 {Model=CL-Class; Maker=Mercedes-Benz; Year= 2000; Color=Fuscia}
 {Model=Lancer; Maker=Mitsubishi; Year= 2010; Color=Turquoise}
 {Model=GX; Maker=Lexus; Year= 2004; Color=Yellow}
-{Model=X3; Maker=Не определено; Year= 2005; Color=Turquoise}
+{Model=X3; Maker=Undefined; Year= 2005; Color=Turquoise}
