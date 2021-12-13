@@ -138,7 +138,7 @@ public class Application {
     /**
      * Метод конвертирует HashMap в отсортированный по ключу список объектов CarMaker.
      * @param carMakerMap - HashMap (ключ - производитель; значение -> CarMaker)
-     * @return HashMap (ключ - производитель, значение: список объектов Car).
+     * @return список производителей, отсортированный по их названию.
      */
     private static List<CarMaker> convertToSortedCarMakerList(Map<String, CarMaker> carMakerMap) {
         List<CarMaker> carMakerList = new ArrayList<>();
